@@ -106,5 +106,7 @@ require('lazy').setup({
 			}
 		}
 	},
-	require 'plugins.autopairs',	
+        require 'plugins.autopairs',
+        require 'plugins.lsp',
+        require 'plugins.format',
 })
