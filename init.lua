@@ -37,6 +37,11 @@ vim.o.updatetime = 250
 -- Decrease mapped sequence wait time
 vim.o.timeoutlen = 300
 
+-- Use four spaces for indentation
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+vim.o.expandtab = true
+
 -- Configure how new splits should be opened
 vim.o.splitright = true
 vim.o.splitbelow = true
@@ -106,8 +111,8 @@ require('lazy').setup({
 			}
 		}
 	},
-       require 'plugins.autopairs',
-       require 'plugins.cmp',
-       require 'plugins.lsp',
-       require 'plugins.format',
+	require 'plugins.autopairs',
+	require 'plugins.lsp',
+	require 'plugins.format',
+	require 'plugins.tokyonight',
 })
